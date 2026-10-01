@@ -21,7 +21,7 @@ verified against GCC 13; see CHANGELOG.md.
 include(FetchContent)
 FetchContent_Declare(
     gcc_compiler_options
-    GIT_REPOSITORY https://github.com/AleksanderAugustyn/gcc-cmake-options.git
+    GIT_REPOSITORY https://github.com/AleksanderAugustyn/gcc-compiler-options.git
     GIT_TAG        2.0.0
 )
 FetchContent_MakeAvailable(gcc_compiler_options)
@@ -34,11 +34,11 @@ include(GCCCompilerOptions/CompilerFlagSummary)
 ### Via git submodule
 
 ```bash
-git submodule add https://github.com/AleksanderAugustyn/gcc-cmake-options.git extern/gcc-cmake-options
+git submodule add https://github.com/AleksanderAugustyn/gcc-compiler-options.git extern/gcc-compiler-options
 ```
 
 ```cmake
-add_subdirectory(extern/gcc-cmake-options)
+add_subdirectory(extern/gcc-compiler-options)
 
 include(GCCCompilerOptions/FortranCompilerOptions)
 include(GCCCompilerOptions/CXXCompilerOptions)
